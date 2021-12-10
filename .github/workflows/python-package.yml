@@ -32,3 +32,5 @@ jobs:
     - name: Test with pytest
       run: |
         pytest --pyargs fancyflags --exitfirst --verbose --failed-first --cov=fancyflags --cov-report html
+    - name: "Upload coverage report to Codecov"
+      uses: codecov/codecov-action@v1
